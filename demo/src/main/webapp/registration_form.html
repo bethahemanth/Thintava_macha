@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="registration_form.css">
+</head>
+<body>
+<form>
+<div class="regup">
+  <div class="reg">
+    <h1>Registration form</h1>
+      <div class="row">
+        <div class="input-container">
+          <label for="fn">FirstName:</label>
+          <input type="text" id="fn" placeholder="Please enter the First Name">
+        </div>
+        <div class="input-container">
+          <label for="ln">Last Name:</label>
+          <input type="text" id="ln" placeholder="Please enter the Last Name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container">
+          <label for="clubs">Nationality:</label>
+          <select id="clubs" name="clubs">
+            <option value="Ncc">Indian</option>
+            <option value="Nss">American</option>
+            <option value="Sac" selected>Australian</option>
+            <option value="E-cell">Korean</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Please enter your email id">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container">
+          <p>Gender</p>
+          <input type="radio" name="gender" id="genderm" value="male">
+          <label for="genderm">male</label>
+          <input type="radio" name="gender" id="genderf" value="female">
+          <label for="genderf">female</label>
+        </div>
+        <div class="input-container">
+          <label for="pass">Password:</label>
+          <input type="password" id="pass" placeholder="Please enter the password">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container">
+          <label for="re">Reenter Password:</label>
+          <input type="text" id="re" placeholder="Please reenter password">
+        </div>
+        <div class="input-container">
+          <label for="dob">Date of birth:</label>
+          <input type="date" id="dob" value="2004-07-02">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container">
+          <label for="mo">Mobile Number:</label>
+          <input type="number" id="mo" placeholder="Please enter the mobile number">
+        </div>
+        <div class="input-container">
+          <p>Gender</p>
+          <input type="radio" name="gender" id="yes" value="male">
+          <label for="yes">Yes</label>
+          <input type="radio" name="gender" id="No" value="female">
+          <label for="No">No</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container">
+          <label for="pre">Food preferences:</label>
+          <br>
+          <select id="pre" name="clubs">
+            <option value="Ncc">Vegetarian</option>
+            <option value="Nss">Non-Vegetarian</option>
+            <option value="Sac" selected>Vegan</option>
+            <option value="E-cell">Cannibals</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <p>Gulten free:</p>
+          <input type="radio" name="gender" id="gl" value="male">
+          <label for="gl">Yes</label>
+          <input type="radio" name="gender" id="glf" value="female">
+          <label for="glf">No</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container">
+          <label for="fo">Favourite Food:</label>
+          <br>
+          <select id="fo" name="clubs">
+            <option value="Ncc">Pizaa</option>
+            <option value="Nss">Burger</option>
+            <option value="Sac" selected>sandwich</option>
+            <option value="E-cell">kfc</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <p>News Letter:</p>
+          <input type="radio" name="gender" id="gl" value="male">
+          <label for="gl">Yes</label>
+          <input type="radio" name="gender" id="glf" value="female">
+          <label for="glf">No</label>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="foi">Favourite cuisine:</label>
+        <br>
+        <select id="foi" name="clubs">
+          <option value="Ncc">American</option>
+          <option value="Nss">Australian</option>
+          <option value="Sac" selected>Asian</option>
+          <option value="E-cell">Korean</option>
+        </select>
+      </div>
+      <br>
+    <form action="">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+</form>
+</body>
+</html>
