@@ -4,10 +4,56 @@
     padding:0;
     box-sizing:border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 body
 {
     font-family:'poppins',sans-serif;
-
 }
+.nav
+{
+    background-color: rgba(0, 0, 0, 0.86);
+    height:40px;
+    padding-left:350px;
+}
+a
+{
+    color:white;
+    padding-left:100px;
+}
+.samosa
+{
+border:1px solid black;
+    height:270px;
+    width:260px;
+}
+.cucumbershrimp
+{
+    border:1px solid black;
+    width:260px;
+}
+.cucumbershrimp img
+{
+    height:270px;
+    width:260px;
+}
+.ap3
+{
+    border:1px solid black;
+    width:260px;
+}
+.ap3 img
+{
+    height:270px;
+    width:260px;
+}
+.ap4
+{
+    border:1px solid black;
+    width:260px;
+}
+.ap4 img
+{
+    height:270px;
+    width:260px;
+}
+
 

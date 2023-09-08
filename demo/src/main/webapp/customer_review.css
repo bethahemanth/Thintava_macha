@@ -14,6 +14,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    border:1px solid black;
+    background-color: rgba(0, 0, 0, 0.58);
 }
 
 .review-form {
@@ -43,9 +45,8 @@ body {
     border-top: 1px solid #ccc;
     padding-top: 20px;
 }
-
 .review {
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 10px;
     margin-bottom: 10px;
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration form</title>
+  <link rel="stylesheet" href="registrationform.css">
+</head>
+<body>
+  <form action="index.jsp" target="_self" method="post">
+    <div class="main">
+    <h1>Registration Form</h1>
+    <div class="fname">
+      <label>First Name:</label><br>
+      <input type="text" name="fname" id="fname" placeholder="enter your fist name" autofocus>
+    </div>
+    <div class="lname">
+      <label>Last Name:</label><br>
+      <input type="text" name="lname" id="lname" placeholder="enter your last name">
+    </div>
+    <div class="email">
+      <label>Email:</label><br>
+      <input type="email" name="email" id="email" placeholder="enter your vaild email">
+    </div>
+    <label for="pass">Password:</label><br>
+    <input id="pass" type="password" name="pass" placeholder="please enter the password">
+    <br>
+    <label for="gender" >Gender:</label>
+    <select id="gender" name="clubs">
+      <option value="Female">Female</option>
+      <option value="Male" selected>Male</option>
+    </select>
+    <br>
+    <label for="clubs">Choose a clubs:</label>
+    <select id="clubs" name="clubs">
+      <option value="Ncc">Ncc</option>
+      <option value="Nss">Nss</option>
+      <option value="Sac" selected>Sac</option>
+      <option value="E-cell">E-cell</option>
+    </select>
+    <br><br>
+    <label for="date">Birthday:</label>
+    <input type="date" id="date" name="birthday"><br><br>
+    <input type="submit"></input>
+    <input type="reset">
+    </div>
+  </form>
+</body>
+</html>
