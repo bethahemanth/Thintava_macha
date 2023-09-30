@@ -1,0 +1,48 @@
+*
+{
+    margin:0px;
+    padding:0;
+    box-sizing:border-box;
+}
+.nav
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    height:40px;
+    padding-left:350px;
+}
+.nav a
+{
+    color:white;
+    padding-left:180px;
+}
+.main
+{
+    background-image: url("catering.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main_sub
+{
+    background-color: rgba(0, 0, 0, 0.71);
+    height:400px;
+    width:300px;
+}
+.span
+{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+}
+.m
+{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+}

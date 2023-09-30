@@ -1,6 +1,6 @@
 <%@ page import="java.sql.*, java.util.*,java.lang.*" %>
 <%
-    String jdbcUrl = "jdbc:mysql://localhost:3306/test";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/db";
     String dbUser = "root";
     String dbPassword = "root";
 
@@ -15,31 +15,21 @@
         e.printStackTrace();
         e.getMessage();
     }
-    %>
+%>
 
-    <%
-    String fname=request.getParameter("fname");
-    String lname=request.getParameter("lname");
-    String email=request.getParameter("email");
+<%
+    String user=request.getParameter("user");
     String pass=request.getParameter("pass");
-    String gender=request.getParameter("gender");
-    String clubs=request.getParameter("clubs");
-    String birthday=request.getParameter("birthday");
-        Connection con=null;
+    Connection con=null;
     PreparedStatement ps=null;
-    String query="insert into register values(?,?,?,?,?,?,?)";
+    String query= "insert into login values(?,?)";
     try
     {
         Class.forName("com.mysql.jdbc.Driver");
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","root");
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","root");
         ps=con.prepareStatement(query);
-        ps.setString(1,fname);
-        ps.setString(2,lname);
-        ps.setString(3,email);
-        ps.setString(4,pass);
-        ps.setString(5,gender);
-        ps.setString(6,clubs);
-        ps.setString(7,birthday);
+        ps.setString(1,user);
+        ps.setString(2,pass);
         int i=ps.executeUpdate();
         if(i>0)
         {
@@ -54,4 +44,4 @@
         out.print(e);
     }
 
-    %>
+%>

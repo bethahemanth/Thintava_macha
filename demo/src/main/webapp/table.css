@@ -1,0 +1,30 @@
+.main
+{
+    background-image: url("table.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main_sub
+{
+    background-color: rgba(0, 0, 0, 0.67);
+    height:260px;
+    width:300px;
+}
+.span
+{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+}
+.submit
+{
+    height:20px;
+    width:50px;
+}

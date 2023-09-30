@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title id="title">India Spice Haven</title>
+  <link rel="icon" type="image/x-icon" href="food_order_logo.png">
+  <link rel="stylesheet" href="table_catering.css">
+</head>
+<body>
+<div class="nav">
+  <a href="table.html">Table reservation</a>
+  <a href="table_catering.html">Catering</a>
+</div>
+<form method="post" action="table_catering.jsp" target="_self">
+<div class="main">
+  <div class="main_sub">
+    <label for="date"><span class="span">Today's date:</span></label>
+    <input type="date" name="date" id="date" required>
+    <br><br>
+    <label for="order_date"><span class="span">Order due date:</span></label>
+    <input type="date" id="order_date" name="order_date" required>
+    <br><br>
+    <label for="delivery_method"><span class="span">Delivery method:</span></label>
+    <select id="delivery_method" name="delivery_method">
+      <option value="For pickup:">For pickup:</option>
+      <option value="For delivery:" selected>For delivery:</option>
+    </select>
+    <br><br>
+    <label for="name"><span class="span">Name:</span></label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="Date_of_event"><span class="span">Date of event:</span></label>
+    <input type="date" id="Date_of_event" name="Date_of_event" required>
+    <br><br>
+    <label for="Time_of_event"><span class="span">Time of event:</span></label>
+    <input type="time" id="Time_of_event" name="Time_of_event" required>
+    <br><br>
+    <label for="Event_location"><span class="span">Event location(If delivery is requested):</span></label>
+    <input type="text" id="Event_location" name="Event_location" required>
+    <br><br>
+    <label for="Number_of_guests"><span class="span">Number_of_guests:</span></label>
+    <input type="text" id="Number_of_guests" name="Number_of_guests" required>
+    <br><br>
+    <button type="submit">Submit</button>
+  </div>
+</div>
+</form>
+</body>
+</html>

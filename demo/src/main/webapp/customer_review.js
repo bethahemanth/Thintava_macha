@@ -1,19 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     const stars = document.querySelectorAll(".star-rating span");
     let userRating = 0;
-
     stars.forEach((star, index) => {
         star.addEventListener("mouseover", () => {
             clearStars();
             userRating = index + 1;
             fillStars(userRating);
         });
-
         star.addEventListener("mouseleave", () => {
             clearStars();
             fillStars(userRating);
         });
-
         star.addEventListener("click", () => {
             const ratingInput = document.querySelector(".star-rating input[value='" + userRating + "']");
             if (ratingInput) {
@@ -21,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
     function clearStars() {
         stars.forEach(star => {
             star.classList.remove("checked");
@@ -37,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function submitReview() {
         const username = document.getElementById("username").value;
         const reviewText = document.getElementById("review").value;
-
-        if (username.trim() === "" || reviewText.trim() === "" || userRating === 0) {
-            alert("Please fill in both fields and provide a rating before submitting.");
-            return;
-        }
+        //
+        // if (username.trim() === "" || reviewText.trim() === "" || userRating === 0) {
+        //     alert("Please fill in both fields and provide a rating before submitting.");
+        //     return;
+        // }
 
         const reviewList = document.getElementById("reviewList");
         const newReview = document.createElement("div");
@@ -86,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Rating: ${userRating} Stars
         `;
 
-        alert("Review Details:\n" + reviewDetails);
+        // alert("Review Details:\n" + reviewDetails);
 
         submitReview();
     });

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
-  <title>Hello, World!</title>
+  <meta charset="UTF-8">
+  <title id="title">India Spice Haven</title>
+  <link rel="icon" type="image/x-icon" href="food_order_logo.png">
   <link rel="stylesheet" href="login_form.css" />
 </head>
 <body>
+<form action="login.jsp" method="post" target="_self">
 <div class="tags">
   <h1>Login</h1>
   <script src="login.js"></script>
   <label for="user"><h3>Username:</h3></label>
-  <input type="text" id="user" placeholder="Enter the username"><br>
+  <input type="text" id="user" name="user" placeholder="Enter the username" required><br>
   <label for="pass">Password:</label><br>
-  <input type="password" id="pass" placeholder="Enter the password"><br>
+  <input type="password" id="pass" name="pass" placeholder="Enter the password" required><br>
   <a href="#" id="forgot">Forgot Password?</a>
   <br><br>
   <button onclick="username();pass();reenter();email()" type="submit"  id="b1">Submit</button>
@@ -20,5 +23,6 @@
   </div>
   <a href="registration_form.html">Register</a>
 </div>
+  </form>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title id="title">India Spice Haven</title>
+  <link rel="icon" type="image/x-icon" href="food_order_logo.png">
+  <link rel="stylesheet" href="table_catering.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+<body>
+<div class="nav">
+  <a href="table.html">Table reservation</a>
+  <a href="table_catering.html">Catering</a>
+</div>
+<form  method="post" action="table.jsp" target="_self">
+<div class="main">
+  <div class="main_sub">
+<label for="fname"><span class="span">First name:</span></label>
+  <input type="text" id="fname" name="fname" placeholder="ex:ram" required>
+    <br>
+    <br>
+    <label for="lname"><span class="span">Last name:</span></label>
+    <input type="text" id="lname" name="lname" placeholder="ex:potheneni" required>
+    <br><br>
+    <label for="date"><span class="span">Reservation Date and time:</span></label>
+    <input type="datetime-local" name="date" id="date" required>
+    <br><br>
+    <label for="email"><span class="span">email:</span></label>
+    <input type="email" id="email" name="email" placeholder="example:myname@gmail.com" required>
+    <br><br>
+    <label for="person"><span class="span">How many persons will you be with?</span></label>
+    <input type="text" id="person" name="person" placeholder="ex:3?" required>
+    <br>
+    <br>
+<button type="submit" class="submit">Submit</button>
+  </div>
+</div>
+</form>
+</body>
+</html>

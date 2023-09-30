@@ -11,6 +11,7 @@
 <div class="main">
 <section class="reviews">
   <h2 style="color:white;">Customer Reviews and Ratings</h2>
+<form action="customer_review.jsp" method="get" target="_self">
   <div class="review-form">
     <input type="text" id="username" placeholder="Your Name">
     <textarea id="review" placeholder="Write your review"></textarea>
@@ -21,8 +22,9 @@
       <span class="fa fa-star"></span>
       <span class="fa fa-star"></span>
     </div>
-    <button id="submitBtn">Submit Review</button>
+    <button id="submitBtn" >Submit Review</button>
   </div>
+</form>
   <div class="review-list" id="reviewList">
     <!-- Reviews will be dynamically added here using JavaScript -->
   </div>
