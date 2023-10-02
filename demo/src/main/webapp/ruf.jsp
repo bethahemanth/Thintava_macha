@@ -1,4 +1,4 @@
-<%@ page import="java.sql.*, java.util.*,java.lang.*" %>
+<%@ page import="java.sql.*" %>
 <%
     String jdbcUrl = "jdbc:mysql://localhost:3306/db";
     String dbUser = "root";
@@ -16,22 +16,17 @@
         e.getMessage();
     }
 %>
-
 <%
-    String name=request.getParameter("name");
-    String review=request.getParameter("review");
-    String stars=request.getParameter("stars");
-    Connection con=null;
-    PreparedStatement ps=null;
-    String query="insert into review values(?,?,?)";
+    String vehicle1 = request.getParameter("vehicle1");
+    String insertQuery = "INSERT INTO ruf VALUES (?)";
+
+    PreparedStatement ps = null;
     try
     {
         Class.forName("com.mysql.jdbc.Driver");
         con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","root");
         ps=con.prepareStatement(query);
-        ps.setString(1,name);
-        ps.setString(2,review);
-        ps.setString(3,stars);
+        ps.setString(1,vehicle1);
         int i=ps.executeUpdate();
         if(i>0)
         {

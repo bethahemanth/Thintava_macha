@@ -1,4 +1,11 @@
 <%@ page import="java.sql.*" %>
+    <script>
+    function showAlert() {
+
+    alert("User with this email already exists");
+    window.location.href = "registration_form.html";
+    }
+    </script>
 <%
     String jdbcUrl = "jdbc:mysql://localhost:3306/db";
     String dbUser = "root";
@@ -10,7 +17,6 @@
         Class.forName("com.mysql.cj.jdbc.Driver");
         connection = DriverManager.getConnection(jdbcUrl, dbUser, dbPassword);
         out.println("Connected successfully!");
-
     } catch (Exception e) {
         e.printStackTrace();
         e.getMessage();
@@ -45,7 +51,7 @@
 
         if (emailCount > 0) {
             // Email already exists in the database
-            out.print("<p>User with this email already exists.</p>");
+            out.println("<script>showAlert();</script>");
         } else {
             // Prepare the SQL statement with parameterized query for inserting user data
             ps = connection.prepareStatement(insertQuery);
@@ -68,7 +74,7 @@
             int rowsAffected = ps.executeUpdate();
 
             if (rowsAffected > 0) {
-                out.print("<p>Data successfully uploaded</p>");
+                response.sendRedirect("login.html");
             } else {
                 out.print("<p>Error Message</p>");
             }

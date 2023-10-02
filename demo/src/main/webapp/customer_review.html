@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="customer-review.png">
   <link rel="stylesheet" href="customer_review.css">
   <title>Customer Reviews</title>
 </head>
@@ -13,15 +13,17 @@
   <h2 style="color:white;">Customer Reviews and Ratings</h2>
 <form action="customer_review.jsp" method="get" target="_self">
   <div class="review-form">
-    <input type="text" id="username" placeholder="Your Name">
-    <textarea id="review" placeholder="Write your review"></textarea>
-    <div class="star-rating">
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-    </div>
+    <input type="text" id="username" name="name" placeholder="Your Name">
+    <textarea id="review" name="review" placeholder="Write your review"></textarea>
+    <label for="cars" style="color:whitesmoke">Choose n.o of stars:</label>
+    <select id="cars" name="stars">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <br><br>
     <button id="submitBtn" >Submit Review</button>
   </div>
 </form>
